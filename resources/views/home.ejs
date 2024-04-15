@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content goes here -->
+</head>
+<body>
+    <marquee behavior="roll" direction="left" class="text-white bg-black mb-4 py-2 text-lg">
+        Discounts available on combos
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only cash on
+        delivery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Free
+        Delivery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guaranteed deleivery in 45 minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        Discounts available on combos
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only cash on
+        delivery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Free
+        Delivery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guaranteed deleivery in 45 minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+    </marquee>
+
+    <section class="hero py-10 pl-5 ">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="w-1/2 ">
+                <h6 class="text-3xl "><em>Food made with love</em></h6><br>
+                <h1 class="text-3xl md:text-6xl font-bold py-1 ">Elevate Your Tastebuds with Foodie</h1>
+                <button id="orderNowBtn" class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary black">Order Now</button>
+            </div>
+            <div class="w-1/2">
+                <video src="img/video1.mp4" autoplay loop muted class="w-full"></video>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-user-tie mb-4"></i>
+                            <h5>Master Chefs</h5>
+                            <p>At Foodie, we take pride in being professionals dedicated to delivering a superior taste crafted with expertise and care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x las la-mitten  mb-4"></i>
+                            <h5>Quality Food</h5>
+                            <p>Our commitment to quality foods means each dish is crafted with the finest ingredients and great experience with every order
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cart-plus  mb-4"></i>
+                            <h5>Online Order</h5>
+                            <p>Experience the ease of enjoying Foodie from the comfort of your home. Order just in few clicks form our Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-pizza-slice  mb-4"></i>
+                            <h5>Variety of snacks</h5>
+                            <p>Experience the fusion of flavors with our diverse snack options. From crispy bites to savory treats, VeggieGrill's snacks are a perfect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="shirtsSection" class="menu container mx-auto py-8 ">
+        <h1 class="text-xl font-bold mb-8 text-4xl text-center"> <i>OUR MENU</i></h1>
+        <div class="grid grid-cols-1 pl-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16 gap-y-16">
+            <% pizzas.forEach(function(pizza, index){ %>
+                <div class="w-full md:w-64 border-2 border-gray-300 rounded-lg shadow-md p-4"
+                     style="transition-delay: 1s; opacity: 0; transform: translateY(30px);">
+                    <img class="h-40 mb-4 mx-auto" src="/img/<%= pizza.image%>" alt="">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-lg">
+                            <%=pizza.name%>
+                        </h2>
+                        <span class="size py-1 px-4 rounded-full uppercase text-xs">
+                            <%=pizza.size%>
+                        </span>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">₹<%=pizza.price%></span>
+                            <button data-pizza="<%= JSON.stringify(pizza)%>"
+                                    class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                <span>+</span>
+                                <span class="ml-4">Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+
+    
+    <script>
+        document.getElementById('orderNowBtn').addEventListener('click', function() {
+            document.getElementById('shirtsSection').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', function() {
+            var items = document.querySelectorAll('.w-full');
+            var scrollPosition = window.scrollY;
+
+            items.forEach(function(item) {
+                var itemPosition = item.getBoundingClientRect().top + window.scrollY;
+                if (scrollPosition > itemPosition - window.innerHeight / 1.5) {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                    item.style.transition = 'opacity 0.5s, transform 0.5s';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

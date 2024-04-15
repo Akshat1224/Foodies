@@ -1,0 +1,207 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ee"
+  },
+  "name": "Casual dish",
+  "image": "dish1.png",
+  "price": "585",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee6671a27a66807cf2bea3"
+  },
+  "name": "Spread Casual dish",
+  "image": "dish2.png",
+  "price": "594",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee6692a27a66807cf2bea4"
+  },
+  "name": "Checkered dish",
+  "image": "dish3.png",
+  "price": "610",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ef"
+  },
+  "name": "Plaid dish",
+  "image": "dish4.png",
+  "price": "620",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee6546739f8c674fd736f0"
+  },
+  "name": "Classic Oxford dish",
+  "image": "dish5.png",
+  "price": "550",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee657d739f8c674fd736f1"
+  },
+  "name": " Button-Down dish",
+  "image": "dish6.png",
+  "price": "630",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee65b2739f8c674fd736f2"
+  },
+  "name": "Striped Linen dish",
+  "image": "dish7.png",
+  "price": "570",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee65e6739f8c674fd736f3"
+  },
+  "name": "Floral    dish",
+  "image": "dish8.png",
+  "price": "640",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee661f739f8c674fd736f4"
+  },
+  "name": "Chambray Work dish",
+  "image": "dish9.png",
+  "price": "590",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee6650739f8c674fd736f5"
+  },
+  "name": "Hawaiian  dish",
+  "image": "dish10.png",
+  "price": "670",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee6680739f8c674fd736f6"
+  },
+  "name": " Mandarin dish",
+  "image": "dish11.png",
+  "price": "610",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee66b5739f8c674fd736f7"
+  },
+  "name": "Poplin dish",
+  "image": "dish12.png",
+  "price": "580",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee66e7739f8c674fd736f8"
+  },
+  "name": " Cotton dish",
+  "image": "dish13.png",
+  "price": "600",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee671c739f8c674fd736f9"
+  },
+  "name": " Polo dish",
+  "image": "dish14.png",
+  "price": "560",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee674f739f8c674fd736fa"
+  },
+  "name": " Corduroy dish",
+  "image": "dish15.png",
+  "price": "620",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee6784739f8c674fd736fb"
+  },
+  "name": "Flannel Plaid dish",
+  "image": "dish16.png",
+  "price": "580",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee67b9739f8c674fd736fc"
+  },
+  "name": "Western Cowboy dish",
+  "image": "dish17.png",
+  "price": "650",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee67ed739f8c674fd736fd"
+  },
+  "name": "Blend  dish",
+  "image": "dish18.png",
+  "price": "700",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee6821739f8c674fd736fe"
+  },
+  "name": "Pinstripe dish",
+  "image": "dish19.png",
+  "price": "610",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee6854739f8c674fd736ff"
+  },
+  "name": "Rugby  dish",
+  "image": "dish20.png",
+  "price": "540",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee6889739f8c674fd73700"
+  },
+  "name": " Embroid dish",
+  "image": "dish21.png",
+  "price": "660",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee68bd739f8c674fd73701"
+  },
+  "name": " Linen dish",
+  "image": "dish22.png",
+  "price": "590",
+  "size": "M-42"
+},
+{
+  "_id": {
+    "$oid": "5eee68ef739f8c674fd73702"
+  },
+  "name": "Yarn-Dyed dish",
+  "image": "dish23.png",
+  "price": "580",
+  "size": "M-42"
+}]

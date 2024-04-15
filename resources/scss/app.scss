@@ -1,0 +1,264 @@
+@import './variables';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+body{
+    font-family:'Lato',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    color: $dark;
+    height: auto;
+    
+}
+
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: black;
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: var(--light) !important;
+}
+
+nav li:last-child a{
+    background: $primary;
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+nav li a{
+    transition: $smooth;
+    &:hover{
+        color: $primary;
+    }
+}
+
+
+section.hero{
+    background: $secondary;
+    overflow: hidden;
+}
+
+.size{
+    background-color: $secondary;
+}
+
+.add-to-cart{
+    border:2px solid $primary;
+    color: $primary;
+    transition: $smooth;
+    &:hover{
+        background: $primary;
+        border: $pure;
+        color: $pure;
+    }
+}
+
+.btn-primary{
+    background: black;
+    transition: $smooth;
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+.cart{
+    background: $secondary;
+    .amount{
+        color: $primary;
+    }
+}
+
+
+.forgotpass{
+    color: $primary;
+}
+
+section.login {
+    background: $secondary;
+    min-height: calc(100vh - 86px);
+    a {
+        color: $primary;
+        &:hover {
+            color: $primary-hover;
+        }
+    }
+}
+
+
+
+a.link {
+    color: $primary;
+}
+
+
+.noty_theme__mint {
+    border-radius: 50px!important;
+    padding-left: 8px!important;
+}
+
+section.status{
+    background:$secondary;
+    min-height: calc((100vh  -  86px));
+}
+
+.status-box{
+    
+    padding: 60px 0 0;
+}
+
+.status-box ul {
+    margin-left: 84px;
+}
+
+.status-box ul li span{
+    position: relative;
+    padding-left:20px ;
+}
+
+//dots
+.status-box ul li span:after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top:50%;
+    background: $dark;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow:0 0 1px 10px $secondary;
+}
+
+
+
+
+//icons
+
+.status-box ul li span:before{
+    font-family: "Line Awesome Free";
+    font-size: 46px;
+    font-weight: 600;
+    position: absolute;
+    left: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: inherit;
+}
+
+.status-box ul li:nth-child(1) span:before {
+    content: '\f46c';
+}
+
+.status-box ul li:nth-child(2) span:before {
+    content: '\f560';
+}
+
+.status-box ul li:nth-child(3) span:before {
+    content: '\f818';
+}
+
+.status-box ul li:nth-child(4) span:before {
+    content: '\f0d1';
+}
+
+.status-box ul li:nth-child(5) span:before {
+    content: '\f582';
+}
+
+.status-box ul li {
+    position: relative;
+}
+
+// Line
+.status-box ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 2px;
+    height: 100%;
+    background: $dark;
+    margin-top: 10px;
+ }
+
+ // Last dot
+.status-box ul li:nth-child(5) span:after {
+    box-shadow:0 20px 1px 20px $secondary;
+}
+
+// line
+.status-box ul li.step-completed:before {
+    background: $gray;
+}
+
+// dots
+.status-box ul li.step-completed span:after {
+    background: $gray;
+}
+
+// text
+.status-box ul li.step-completed span {
+    color: $gray;
+}
+
+
+// Current status
+.status-box ul li.current span {
+    color: $primary;
+}
+
+.status-box ul li.current span:after {
+    background: $primary;
+}
+
+
+
+.status-box ul li small {
+    float: right;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+
+@media(max-width:1060px) {
+    .container {
+        max-width: 90%;
+    }
+    table {
+       display: block;
+       overflow-x: auto;
+       white-space: nowrap;
+    }
+}
+
+@media(max-width: 768px) {
+    .status-box ul li span:before {
+        font-size: 34px;
+    }
+}
+
+
+/* Add this CSS to your existing styles or in a separate CSS file */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .login {
+        padding-top: 16px; /* Adjust top padding */
+    }
+    .hehehe {
+        max-width: 80%; /* Adjust max width */
+    }
+    .bglogin {
+        background-size: contain; /* Adjust background size */
+    }
+}
+
