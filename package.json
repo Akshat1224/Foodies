@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "description": "project",
-  "author": "Nikhil Kumar",
+  "author": "Akshat Kushwaha",
   "scripts": {
     "serve": "node server.js",
     "dev": "nodemon server.js",
